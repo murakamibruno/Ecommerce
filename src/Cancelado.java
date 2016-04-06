@@ -100,6 +100,14 @@ public class Cancelado implements Estado
 	}
 
 	@Override
+	public void disponibilizar(Produto produto) 
+	{
+		Disponivel disponivel = new Disponivel();
+		produto.setEstado(disponivel);
+		System.out.println("Produto voltou a estar disponivel");
+	}
+	
+	@Override
 	public String informarEstado() {
 		// TODO Auto-generated method stub
 		return "Cancelado";

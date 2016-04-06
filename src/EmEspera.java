@@ -39,8 +39,8 @@ public class EmEspera implements Estado
 	@Override
 	public void naoEfetuarPagamento(Produto produto) 
 	{
-		Disponivel disponivel = new Disponivel();
-		produto.setEstado(disponivel);
+		Cancelado cancelado = new Cancelado();
+		produto.setEstado(cancelado);
 		System.out.println("Produto nao foi pago dentro do prazo estipulado");
 	}
 
@@ -104,6 +104,12 @@ public class EmEspera implements Estado
 		return dataPgto;
 	}
 
+	@Override
+	public void disponibilizar(Produto produto) {
+		// TODO Auto-generated method stub
+		
+	}
+	
 	@Override
 	public String informarEstado() {
 		return "Em espera";

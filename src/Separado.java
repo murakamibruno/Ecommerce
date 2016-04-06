@@ -64,8 +64,8 @@ public class Separado implements Estado
 	@Override
 	public void cancelar(Produto produto)
 	{
-		Disponivel disponivel = new Disponivel();
-		produto.setEstado(disponivel);
+		Cancelado cancelado = new Cancelado();
+		produto.setEstado(cancelado);
 		System.out.println("Pedido foi cancelado");
 		
 	}
@@ -105,6 +105,12 @@ public class Separado implements Estado
 		return dataDespacho;
 	}
 
+	@Override
+	public void disponibilizar(Produto produto) {
+		// TODO Auto-generated method stub
+		
+	}
+	
 	@Override
 	public String informarEstado() {
 		// TODO Auto-generated method stub

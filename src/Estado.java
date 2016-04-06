@@ -16,6 +16,7 @@ public interface Estado
 	public void entregar(Produto produto, Date date, String destino);
 	public void retornar(Produto produto, Date date);
 	public void extraviar(Produto produto);
+	public void disponibilizar(Produto produto);
 	public void setDate(Date date);
 	public Date getDate();
 	public String informarEstado();

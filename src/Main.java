@@ -22,6 +22,8 @@ public class Main
 		produto.informarEstado();
 		produto.getEstado().naoEfetuarPagamento(produto);
 		produto.informarEstado();
+		produto.getEstado().disponibilizar(produto);
+		produto.informarEstado();
 		//------------------------------------------------------------------- Produto volta a estar disponivel
 		produto.getEstado().adicionar(produto);
 		produto.informarEstado();
@@ -34,6 +36,8 @@ public class Main
 		produto.getEstado().separarItem(produto);
 		produto.informarEstado();
 		produto.getEstado().cancelar(produto);
+		produto.informarEstado();
+		produto.getEstado().disponibilizar(produto);
 		produto.informarEstado();
 		//------------------------------------------------------------------- Produto volta a estar disponivel
 		produto.getEstado().adicionar(produto);

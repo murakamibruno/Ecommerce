@@ -103,6 +103,12 @@ public class Pago implements Estado
 	}
 
 	@Override
+	public void disponibilizar(Produto produto) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	@Override
 	public String informarEstado() {
 		return "Pago";
 	}
